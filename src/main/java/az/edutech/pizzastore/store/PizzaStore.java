@@ -1,12 +1,18 @@
 package az.edutech.pizzastore.store;
 
+import az.edutech.pizzastore.model.Cheque;
+
+import java.util.List;
+
 public class PizzaStore {
 
     // gettet ve setter metodlar elave edin.
     private String name;
+    private List<Cheque> cheques;
 
     public PizzaStore(String name){
         this.name = name;
+        // Init cheques list
     }
 
     /*
@@ -18,6 +24,16 @@ public class PizzaStore {
     * */
     public String orderPizza(String pizzaName, Integer count){
         // Bu methodu implement etmelisiniz.
+        return null;
+    }
+
+    public boolean cancelOrder (Cheque cheque){
+        // cancel order if possible
+        return false;
+    }
+
+    public Cheque removeOrder(Cheque cheque, Integer orderNo){
+        // return New Cheque
         return null;
     }
 

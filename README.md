@@ -1,5 +1,7 @@
 PizzaStore.
 
+##Level 1
+
 Application-un məqsədi sadə PizzaStore funksionalı qurmaqdan ibarətdir.
 İlkin olaraq aşağıdakı komponentlərdən ibarətdir.
 
@@ -21,4 +23,20 @@ Tapşırıq:
 3. PizzaFactory - classında yeni Pizza classlarını nəzərə almaq.
 
 Qeyd: İnheritance - dan istifadə etmədən yazmalısınız. 
- 
+
+
+
+##Level 2
+
+1. Model package-dəki Pizza classları arasında iyerarxiya təmin etmək məqsədi ilə AbstractPizza classı yaradın.
+Bu class digər pizza classlarındakı ümumi metod və fieldləri özündə cəmləşdirməlidir. Ehtiyac olarsa parametr qəbul edən overloaded constructor əlavə edin.  
+Qalan bütün pizza classları AbstractPizza classından törənməlidirlər.
+2. PizzaFactory classındakı getPriceForPizza metodu bizə axtarılan pizzanın sayına görə qiymətini deyil artıq həmin pizzanın özünü qaytarmalıdır. 
+Metodun return type-ı AbstractPizza olmalıdır.
+3. 2-nin nəticəsinə uyğun olaraq PizzaStore classındakı orderPizza funksiyası PizzaFactory.getPriceForPizza()
+metodundan uyğun pizzanı almalı və aidiyyatı qiymət funksiyasını özu çağırmalıdır.
+Və əlavə olaraq Siffarişə uyğun olaraq yeni Cheque instansı yaratmalı və o instansı uyğun olaraq doldurmalıdır və həmin obyekti "cheques" listinə əlavə etməlidir.
+4. PizzaStore.cancelOrder(Cheque); funksiyası geri qaytarılması tələb olunan çeki alır və yoxlanış apardıqdan sonra 
+qaytarılıb-qaytarılmayacağı (true/false) haqqında məlmat verir.
+5. PizzaStore.removeOrder(Cheque,Integer); funksiyası sifarişdən hər hansısa bir məhsulu silmək üçün istifadə olunur. Metod 
+sifariş çekini və sifariş çekindəki Order nömrəsini tələb edir və həmin məhsulu sifarişdən silərək yeni çek qaytarır.
