@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="671dba0d-2f1a-49d3-b228-b144908a6956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/model/Cheque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PizzaStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PizzaStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/model/SomePizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/model/SomePizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/store/PizzaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/store/PizzaFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/store/PizzaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/edutech/pizzastore/store/PizzaStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,5 +82,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2363" y="130" width="1024" height="845" key="#Project_Structure" timestamp="1587895478813">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2363" y="130" width="1024" height="845" key="#Project_Structure/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587895478813" />
   </component>
 </project>
