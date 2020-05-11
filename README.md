@@ -40,3 +40,6 @@ Və əlavə olaraq Siffarişə uyğun olaraq yeni Cheque instansı yaratmalı v�
 qaytarılıb-qaytarılmayacağı (true/false) haqqında məlmat verir.
 5. PizzaStore.removeOrder(Cheque,Integer); funksiyası sifarişdən hər hansısa bir məhsulu silmək üçün istifadə olunur. Metod 
 sifariş çekini və sifariş çekindəki Order nömrəsini tələb edir və həmin məhsulu sifarişdən silərək yeni çek qaytarır.
+6. PizzaStore - classındakı cancelCheque və removeOrder metodlarının overloaded versiyalarını yazın. Yeni funksiyalar əvvəlkilərdən fərqli olaraq 
+Cheque referansı əvəzinə sadəcə çekin id-sini qəbul edəcək.
+7. 6-cı bəndin tələblərini təmin etmək üçün List<Cheuqe> collectionunu Map<Integer,Cheque> ilə əvəz edin və bunu kodun aidiyyatı yerlərində nəzərə alın.

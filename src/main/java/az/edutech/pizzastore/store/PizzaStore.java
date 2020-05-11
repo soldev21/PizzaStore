@@ -60,12 +60,18 @@ public class PizzaStore {
 
     public boolean cancelCheque(Cheque cheque) {
         // cancel order if possible
-        return false;
+        if (cheques.contains(cheque)){
+            cheque.setCancelled(true);
+            return true;
+        }else {
+            return false;
+        }
     }
 
-    public Cheque removeOrder(Cheque cheque, Integer orderNo) {
+    public void removeOrder(Cheque cheque, Integer orderNo) {
         // return New Cheque
-        return null;
+        if (!cheques.contains(cheque)) throw new RuntimeException("There is no such cheque!");
+        cheque.removeOrder(orderNo);
     }
 
     /*
@@ -76,8 +82,22 @@ public class PizzaStore {
         if (Objects.nonNull(currentCheque)) throw new RuntimeException("Please close cheque first.");
         StringBuilder history = new StringBuilder();
         for (Cheque cheque : cheques) {
-            history.append(cheque.toString())
-                    .append("\n");
+            if (!cheque.isCancelled()) {
+                history.append(cheque.toString())
+                        .append("\n");
+            }
+        }
+        return history.toString();
+    }
+
+    public String getAllCancelledOrderHistory() {
+        if (Objects.nonNull(currentCheque)) throw new RuntimeException("Please close cheque first.");
+        StringBuilder history = new StringBuilder();
+        for (Cheque cheque : cheques) {
+            if (cheque.isCancelled()) {
+                history.append(cheque.toString())
+                        .append("\n");
+            }
         }
         return history.toString();
     }
