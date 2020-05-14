@@ -4,21 +4,23 @@ import az.edutech.pizzastore.model.AbstractPizza;
 import az.edutech.pizzastore.model.Cheque;
 import az.edutech.pizzastore.store.PizzaStore;
 
+import java.util.*;
+
 public class Application {
     public static void main(String[] args) {
-        PizzaStore pizzaStore = new PizzaStore("Kapital Pizza Store");
-//        String cheque = pizzaStore.orderPizza("Margarita",3);
-        pizzaStore.openNewCheque();
-        pizzaStore.orderPizza("Margarita",3);
-        pizzaStore.orderPizza("BBQ",6);
-        pizzaStore.orderPizza("SomePizza",2);
-        Cheque cheque = pizzaStore.closeCheque();
-
-        System.out.println(pizzaStore.getAllOrderHistory());
-
-        pizzaStore.removeOrder(cheque,2);
-
-        System.out.println(pizzaStore.getAllOrderHistory());
+//        PizzaStore pizzaStore = new PizzaStore("Kapital Pizza Store");
+////        String cheque = pizzaStore.orderPizza("Margarita",3);
+//        pizzaStore.openNewCheque();
+//        pizzaStore.orderPizza("Margarita",3);
+//        pizzaStore.orderPizza("BBQ",6);
+//        pizzaStore.orderPizza("SomePizza",2);
+//        Cheque cheque = pizzaStore.closeCheque();
+//
+//        System.out.println(pizzaStore.getAllOrderHistory());
+//
+//        pizzaStore.removeOrder(cheque,2);
+//
+//        System.out.println(pizzaStore.getAllOrderHistory());
 
 //        pizzaStore.openNewCheque();
 //        pizzaStore.orderPizza("Margarita",6);
@@ -27,5 +29,15 @@ public class Application {
 //        pizzaStore.cancelCheque(cheque);
 ////        System.out.println(pizzaStore.getAllOrderHistory());
 //        System.out.println(pizzaStore.getAllCancelledOrderHistory());
+
+        Map<Integer,Cheque> map = new HashMap<>();
+        map.put(1,new Cheque());
+        map.put(2,new Cheque());
+        Set<Integer> keys = map.keySet();
+        Collection<Cheque> values = map.values();
+
+        for(Cheque s:values){
+            System.out.println(s);
+        }
     }
 }
