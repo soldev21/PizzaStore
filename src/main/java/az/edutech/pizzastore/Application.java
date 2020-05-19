@@ -33,10 +33,8 @@ public class Application {
         Map<Integer,Cheque> map = new HashMap<>();
         map.put(1,new Cheque());
         map.put(2,new Cheque());
-        Set<Integer> keys = map.keySet();
-        Collection<Cheque> values = map.values();
 
-        for(Cheque s:values){
+        for(Cheque s:map.values()){
             System.out.println(s);
         }
     }

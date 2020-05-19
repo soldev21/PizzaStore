@@ -43,3 +43,5 @@ sifariş çekini və sifariş çekindəki Order nömrəsini tələb edir və hə
 6. PizzaStore - classındakı cancelCheque və removeOrder metodlarının overloaded versiyalarını yazın. Yeni funksiyalar əvvəlkilərdən fərqli olaraq 
 Cheque referansı əvəzinə sadəcə çekin id-sini qəbul edəcək.
 7. 6-cı bəndin tələblərini təmin etmək üçün List<Cheuqe> collectionunu Map<Integer,Cheque> ilə əvəz edin və bunu kodun aidiyyatı yerlərində nəzərə alın.
+8. Gün ərzində aparılan satış əməliyyatları üzrə hesabat aparmaq üçün, çekləri fayla export etmək lazımdır. Bunun üçü PizzaStore-classına exportCheques(int i);
+tərtibində bir metod əlavə etməlisiniz. Metodun qəbul etdiyi parameter (i) 3 qiymət alır. 0 - bütün çeklər, 1 - yanlız uğurlu çeklər, 2 - yanlız uğursuz çeklər.
